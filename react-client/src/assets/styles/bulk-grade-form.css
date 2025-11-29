@@ -1,0 +1,65 @@
+/* src/assets/styles/bulk-grade-form.css */
+.bulk-grade-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.bulk-grade-form .form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.bulk-grade-form .form-control,
+.bulk-grade-form .form-select {
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+}
+
+.bulk-grade-form .input-group-text {
+    background-color: #f8f9fa;
+}
+
+.selected-students {
+    margin: 1.5rem 0;
+}
+
+.selected-students h6 {
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.student-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
+.student-item {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.student-item:last-child {
+    border-bottom: none;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .action-buttons .btn {
+        width: 100%;
+    }
+}

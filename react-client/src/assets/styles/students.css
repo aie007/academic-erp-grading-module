@@ -1,0 +1,326 @@
+/* Students Component Styles */
+.students-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.students-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.students-title {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.students-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.students-thead {
+  background-color: #4a6cf7 !important;
+  color: brown;
+}
+
+.students-thead th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.students-tr {
+  transition: background-color 0.2s ease;
+}
+
+.students-tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.students-tr:hover {
+  background-color: #f1f3f9;
+}
+
+.students-td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  color: #2c3e50;
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+.students-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background-color: #4a6cf7;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.students-action-btn:hover {
+  background-color: #3a5bd9;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.students-action-btn.secondary {
+  background-color: #6c757d;
+}
+
+.students-action-btn.secondary:hover {
+  background-color: #5a6268;
+}
+
+.students-loading {
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.students-error {
+  padding: 1rem;
+  background-color: #ffebee;
+  color: #c62828;
+  border-radius: 4px;
+  margin: 1rem 0;
+  border-left: 4px solid #c62828;
+}
+
+.students-no-data {
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* Grade Form Styles */
+.grade-form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.grade-form input,
+.grade-form select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.grade-form button {
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.grade-form button:hover {
+  background-color: #218838;
+}
+
+.grade-form button[type="button"] {
+  background-color: #6c757d;
+}
+
+.grade-form button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+/* src/assets/styles/students.css */
+
+/* Student Table Styles */
+.students-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.students-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.students-title {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.students-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.students-th {
+    background-color: #f8f9fa;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.students-td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Student Rows */
+.student-row {
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.student-row:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.student-row.selected {
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+.student-checkbox {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* Bulk Actions */
+.bulk-actions {
+    padding: 1rem 0;
+    border-top: 1px solid #dee2e6;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Grade Popup */
+.grade-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.grade-popup-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #666;
+    padding: 5px;
+    line-height: 1;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+/* Grade Button */
+.grade-btn {
+    padding: 0.5rem 1rem;
+    background-color: #4a6cf7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.grade-btn:hover {
+    background-color: #3a5bd9;
+}
+
+/* Loading and Error States */
+.students-loading,
+.students-error,
+.students-no-data {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.students-error {
+    color: #dc3545;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .students-table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .students-th,
+    .students-td {
+        white-space: nowrap;
+    }
+}
